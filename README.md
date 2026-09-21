@@ -9,6 +9,11 @@ Most of what I build is a retrieval pipeline, an agent, or the evaluation harnes
 that decides whether either one is good enough to ship. Both projects below run
 offline with no API key, so the numbers are checkable rather than claimed.
 
+Neither uses an agent framework. The chunking, the hybrid retrieval, the rank
+fusion, the agent loop, the tool dispatch and the provider adapters are all
+written out — partly because the interesting decisions live exactly where a
+framework would have made them for me.
+
 ---
 
 ### [hybrid-rag-service](https://github.com/0yman/hybrid-rag-service)
