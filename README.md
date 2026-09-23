@@ -18,17 +18,26 @@ framework would have made them for me.
 
 ### [hybrid-rag-service](https://github.com/0yman/hybrid-rag-service)
 
-Retrieval-augmented QA. FAISS dense retrieval and BM25 fused with Reciprocal Rank
-Fusion, citations validated against the passages they point at, and abstention
-when the corpus does not support an answer.
+Ask questions of your own PDFs and notes, and see exactly which passage each
+answer came from. Double-click to run, no API key needed. Under the hood: FAISS
+dense retrieval and BM25 fused with Reciprocal Rank Fusion, citations validated
+against the passages they point at, and a plain "not in your documents" when
+the answer isn't there.
 
-The evaluation is the actual project. Scoring two query distributions separately
-showed dense retrieval **collapsing from 0.935 to 0.667 recall@3** on keyword
-queries — where BM25 scored 1.000. The hybrid fusion I had assumed was a clear
-win came second on *both* sets. I reported that instead of tuning the benchmark
-until it agreed with me.
+The evaluation is the actual project, and it kept contradicting me:
 
-`Python` · `FAISS` · `BM25` · `FastAPI` · `Docker` · 100 tests, no network, no API key
+- Dense retrieval dropped to **0.667–0.800 recall@3** on keyword queries, where
+  BM25 scored 1.000 — and at k=3, BM25 alone was the safest retriever, not the
+  hybrid I'd built.
+- Swapping the embedding runtime for a 10× smaller install was meant to be
+  packaging. The "same" model produced different vectors and moved recall **13
+  points**.
+- CI scored differently from my laptop, with identical code. Rank-fusion ties
+  were being broken by *absolute file paths*.
+
+Each one is written up, with the fix, in the README.
+
+`Python` · `FAISS` · `BM25` · `ONNX Runtime` · `FastAPI` · `Docker` · 161 tests, no network, no API key
 
 ---
 
