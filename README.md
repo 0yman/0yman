@@ -43,9 +43,10 @@ Each one is written up, with the fix, in the README.
 
 ### [port-analyst-agent](https://github.com/0yman/port-analyst-agent)
 
-A tool-calling agent that answers analytical questions by writing read-only SQL
-against a DuckDB star schema, with a bounded reasoning loop, self-correction on
-query errors, and a full trace of every tool call and token.
+Ask your data questions in plain English: drop in a CSV or Excel file (or use
+the built-in port warehouse) and a tool-calling agent writes read-only SQL,
+runs it, and shows the answer, the rows behind it, and every step. Double-click
+to run; the page walks you through adding a free AI key.
 
 Guardrails are a control, not a request in a prompt: `sqlglot` rejects stacked
 statements, DML hidden inside CTEs, and DuckDB's file-read functions — the real
@@ -57,7 +58,7 @@ genuinely cannot answer. An ablation found that putting the schema in the system
 prompt uses **5% fewer** prompt tokens than letting the agent discover it — the
 opposite of what I expected, and the reason I measure instead of guessing.
 
-`Python` · `OpenAI & Gemini function calling` · `DuckDB` · `sqlglot` · 115 tests, no network, no API key
+`Python` · `OpenAI & Gemini function calling` · `DuckDB` · `sqlglot` · 136 tests, no network, no API key
 
 ---
 
