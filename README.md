@@ -41,7 +41,7 @@ Each one is written up, with the fix, in the README.
 
 ---
 
-### [port-analyst-agent](https://github.com/0yman/port-analyst-agent)
+### [ask-your-data](https://github.com/0yman/ask-your-data)
 
 Ask your data questions in plain English: drop in a CSV or Excel file (or use
 the built-in port warehouse) and a tool-calling agent writes read-only SQL,
