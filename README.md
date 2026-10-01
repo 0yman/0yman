@@ -72,6 +72,22 @@ Each one is written up, with the fix, in the README.
 
 ---
 
+### Experience
+
+**AI engineering intern, Alexandria Port Authority** · Jan 2025 to Feb 2026
+
+- Engineered the SQL (joins, aggregations, window functions) that extracted, cleaned
+  and transformed **800,000+** maritime logistics records into model-ready datasets,
+  and made retrieval **25%** faster.
+- Built a linear regression model on container dwell time, identified its key drivers
+  and presented the findings to operations.
+- Automated data-quality checks on the daily cargo-log ingestion in Python, enforcing
+  integrity constraints and saving **5+ hours** a week.
+
+AI Engineering Intern Certificate · Alexandria Port Authority · February 2026
+
+---
+
 ### Now
 
 **AYD-0.1**, a 9B SQL agent model: fine-tuning Qwen3.5-9B on agent conversations
@@ -84,8 +100,5 @@ are measured.
 Python · SQL · RAG & hybrid retrieval · tool-calling agents · LangGraph · MCP ·
 OpenAI, Gemini and OpenAI-compatible APIs · vLLM · offline evaluation (recall@k, MRR,
 nDCG, execution accuracy, paired A/B runs) · scikit-learn · FastAPI · Docker · GitHub Actions
-
-Previously: AI engineering intern at Alexandria Port Authority, working on
-800,000+ maritime logistics records.
 
 [aymaneldaly72@gmail.com](mailto:aymaneldaly72@gmail.com) · [LinkedIn](https://linkedin.com/in/ayman-eldaly) · [Portfolio](https://0yman.github.io)
