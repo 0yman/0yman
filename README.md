@@ -40,7 +40,7 @@ What measuring it showed:
 - The same code scored anywhere from **8.3 to 10.7** on the hard set across sessions.
   Since then every change runs interleaved with the committed code in the same
   session, and only a gain that repeats counts.
-- Execution accuracy on result sets, not SQL text: 0.944 answer accuracy and 1.000
+- Graded on result sets, not SQL text: 0.944 answer figure coverage and 1.000
   correct declines on questions the data cannot answer.
 
 `Python` · `LangGraph` · `MCP` · `DuckDB` · `sqlglot` · `FastAPI` · `Docker` · 250 tests, no network, no API key
